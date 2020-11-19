@@ -13,8 +13,8 @@ To use our API you only have to do a GET request to  **https://api.manitoba.ca/j
 - Param2 (string) This is an string value. Optional
 
 #### Sample Calls
-- https://api.manitoba.ca/json?param1
-- https://api.manitoba.ca/json?param1&param2
+> https://api.manitoba.ca/json?param1
+> https://api.manitoba.ca/json?param1&param2
 
 #### Response
 ##### JSON
