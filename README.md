@@ -1,7 +1,7 @@
 # Manitoba API
 
 ## What is Manitoba API?
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus ipsum non dui dignissim, ut maximus quam volutpat. Curabitur luctus vestibulum lacus quis pulvinar. Fusce laoreet lacus ante, eu consequat justo porta id. Cras fringilla in sem quis volutpat. Donec tristique dui vel imperdiet finibus. Aliquam ex justo, consequat a orci ac, mollis accumsan sapien. In vitae mauris id neque blandit pretium.
+Manitoba API is a trend setting API that allows you to obtain information about anywhere or everywhere in Manitoba! We provide a simple one endpoint interface that can be filtered to specific locations using our various parameters.
 
 ## API documentation
 
