@@ -6,9 +6,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus ipsum non du
 ## API documentation
 
 ### Endpoints
-To use our API we have 2 endpoints both are GET requests
+To use our API we have 1 endpoints both are GET requests
 
-> GenericInfo **https://api.manitoba.ca/Ginfo**
+> Generic Info  **https://api.manitoba.ca/Ginfo**
 
 GenericInfo can take any parameter and will return various generic facts about the location if found, If no location is found it will return generic information about all cities in manitoba.
 
