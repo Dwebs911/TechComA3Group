@@ -23,7 +23,7 @@ To use our API you only have to do a GET request to  **https://api.manitoba.ca/j
       {  
         "Param1":"204",  
         "Param2":"Manitoba"  
-      },  
+      } 
        "status":"OK"  
     }
 
