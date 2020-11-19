@@ -9,8 +9,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus ipsum non du
 To use our API you only have to do a GET request to  **https://api.manitoba.ca/json**.
 
 #### Parameters
-- Param1 (int) This is an int value. Required
-- Param2 (string) This is an string value. Optional
+- City (String) The City parameter is used to specify the location that you want to obtain the information of. **Required**
+- Address (String) Address allows you to focus in on a specific area of the city. If the address is found the information will be limited to a 10km radius of the address. **Optional**
+- PostalCode (String) PostalCode allows you to focus in on a specific area of the city. If the postal code is found the information will be limited to a 10km radius of the postal code. **Optional**
 
 #### Sample Calls
 > https://api.manitoba.ca/json?param1
