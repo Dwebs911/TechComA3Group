@@ -10,7 +10,12 @@ To use our API we have 1 endpoint that is a GET request
 
 > Generic Info  **https://api.manitoba.ca/Ginfo**
 
-GenericInfo can take any parameter and will return various generic facts about the location if found, If no location is found it will return generic information about all cities in manitoba. Some information can be more detailed such as nearby stores and other will be more vague and refrence the city that the location is in.
+To call using a parameter:
+>  **https://api.manitoba.ca/Ginfo/param1/**
+To call using multiple parameters:
+>  **https://api.manitoba.ca/Ginfo/param1/param2/param3**
+
+GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is found it will return generic information about all cities in manitoba. Some information can be more detailed such as nearby stores and other will be more vague and refrence the city that the location is in. When using multipla parameters the information for the most specific one will be used.
 
 #### Parameters
 - City (String) The City parameter is used to specify the location of a city that you want to obtain the information of. **Optional**
@@ -24,7 +29,9 @@ GenericInfo can take any parameter and will return various generic facts about t
 #### Sample Response
 ##### JSON
 
-Call > https://api.manitoba.ca/Ginfo/Winnipeg
+Call 
+> https://api.manitoba.ca/Ginfo/Winnipeg
+Response
 > {
       "results":  
       {  
@@ -37,7 +44,9 @@ Call > https://api.manitoba.ca/Ginfo/Winnipeg
     }
    
 
-Call > https://api.manitoba.ca/Ginfo/   
+Call 
+> https://api.manitoba.ca/Ginfo/   
+Response
 > {
       "results":  
       {  
