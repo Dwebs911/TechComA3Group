@@ -12,6 +12,8 @@ To use our API we have 1 endpoint that is a GET request
 
 To call using a parameter:
 >  **https://api.manitoba.ca/Ginfo/param1/**
+
+
 To call using multiple parameters:
 >  **https://api.manitoba.ca/Ginfo/param1/param2/param3**
 
