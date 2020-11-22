@@ -34,8 +34,11 @@ GenericInfo can take any parameter and will return various generic facts about t
 ##### JSON
 
 Call 
+
 > https://api.manitoba.ca/Ginfo/Winnipeg
+
 Response
+
 > {
       "results":  
       {  
@@ -49,8 +52,11 @@ Response
    
 
 Call 
+
 > https://api.manitoba.ca/Ginfo/   
+
 Response
+
 > {
       "results":  
       {  
