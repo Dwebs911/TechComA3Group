@@ -26,6 +26,8 @@ GenericInfo can take any parameter and will return various generic facts about t
 
 #### Sample Calls
 > https://api.manitoba.ca/Ginfo/Winnipeg
+
+
 > https://api.manitoba.ca/Ginfo
 
 #### Sample Response
