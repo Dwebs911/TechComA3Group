@@ -42,7 +42,7 @@ Response
 > {
       "results":  
       {  
-        "TimeZoneWinnipeg":"GMT-6",  
+        "TimeZoneWinnipeg":"GMT-6",
         "TemperatureWinnipeg":" -6 C"
         "NearbyStoresWinnipeg":"12"
         "WinnipegPopulation":"749,534"
