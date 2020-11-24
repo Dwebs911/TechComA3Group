@@ -1,12 +1,12 @@
 # Manitoba API
 
 ## What is Manitoba API?
-Manitoba API is a trend setting API that allows you to obtain information about anywhere or everywhere in Manitoba! We provide a simple one endpoint interface that can be filtered to specific locations using our various parameters. Our API allows its users to enter in a location with varying levels of accuracy and recieve helpful information about the surrounding area.
+Manitoba API is a trend setting API that provides information about anywhere or everywhere in Manitoba! It provides a simple one endpoint interface provides useful information about any specific location and surrounding area in Manitoba.
 
 ## API documentation
 
 ### Endpoints
-To use our API we have 1 endpoint that is a GET request
+Manitoba API has 1 endpoint that is a GET request
 
 > Generic Info  **https://api.manitoba.ca/Ginfo**
 
@@ -17,19 +17,12 @@ To call using a parameter:
 To call using multiple parameters:
 >  **https://api.manitoba.ca/Ginfo/param1/param2/param3**
 
-GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is specified it will return generic information about all cities in Manitoba. When using multiple parameters the information for the most specific one will be used.
+Ginfo uses parameters to determine location and will return various facts about the location if found. If no location is specified/found, Ginfo will return information about all cities in Manitoba. When using multiple parameters the most specific one will be used.
 
 #### Parameters
-- City (String) The City parameter is used to specify the location of a city that you want to obtain the information of. **Optional**
-- Address (String) Address allows you to focus in on a specific area of the city. If the address is found the information will be limited to a 10km radius of the address. **Optional**
-- PostalCode (String) PostalCode allows you to focus in on a specific area of the city. If the postal code is found the information will be limited to a 10km radius of the postal code. **Optional**
-
-
-#### Sample Calls
-> https://api.manitoba.ca/Ginfo/Winnipeg
-
-
-> https://api.manitoba.ca/Ginfo
+- City (String) - Used to specify the location of a city that you want to obtain the information of. **Optional**
+- Address (String) - Used to focus in on a specific area of the city. If the address is found the information will be limited to a 10km radius of the address. **Optional**
+- PostalCode (String) - Used to focus in on a specific area of the city. If the postal code is found the information will be limited to a 10km radius of the postal code. **Optional**
 
 #### Resources
 
@@ -46,10 +39,7 @@ Resources will be formatted in JSON and will be formatted as follows:
        "status":"OK"  
     }
 
-If an address, city, or postal code are specified in a call but not found, an error code will be returned.
-
-#### Sample Response
-##### JSON
+#### Sample Calls and Response
 
 Call 
 
@@ -93,17 +83,4 @@ Response
       } 
        "status":"OK"  
     }
-
-Call
-
-> https://api.manitoba.ca/Ginfo/sgdjshdfs
-
-Response
-
-> { 
-	"results:
-	{
-	}
-	"status":"400 Bad Request"
-}
 
