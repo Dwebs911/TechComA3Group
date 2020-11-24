@@ -17,18 +17,34 @@ To call using a parameter:
 To call using multiple parameters:
 >  **https://api.manitoba.ca/Ginfo/param1/param2/param3**
 
-GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is found it will return generic information about all cities in manitoba. Some information can be more detailed such as nearby stores and other will be more vague and refrence the city that the location is in. When using multipla parameters the information for the most specific one will be used.
+GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is found it will return generic information about all cities in Manitoba. Some information can be more detailed such as nearby stores and other will be more vague and reference the city that the location is in. When using multiple parameters the information for the most specific one will be used.
 
 #### Parameters
 - City (String) The City parameter is used to specify the location of a city that you want to obtain the information of. **Optional**
 - Address (String) Address allows you to focus in on a specific area of the city. If the address is found the information will be limited to a 10km radius of the address. **Optional**
 - PostalCode (String) PostalCode allows you to focus in on a specific area of the city. If the postal code is found the information will be limited to a 10km radius of the postal code. **Optional**
 
+
 #### Sample Calls
 > https://api.manitoba.ca/Ginfo/Winnipeg
 
 
 > https://api.manitoba.ca/Ginfo
+
+#### Resources
+
+Resources will be formatted in JSON and will be formatted as follows:
+
+> {
+      "results":  
+      {  
+        "TimeZoneWinnipeg":"GMT-6",
+        "TemperatureWinnipeg":"-6 C"
+        "NearbyStoresWinnipeg":"128"
+        "WinnipegPopulation":"749,534"
+      } 
+       "status":"OK"  
+    }
 
 #### Sample Response
 ##### JSON
@@ -61,7 +77,7 @@ Response
       "results":  
       {  
         "TimeZoneWinnipeg":"GMT-6",
-        "TemperatureWinnipeg":" -6 C"
+        "TemperatureWinnipeg":"-6 C"
         "NearbyStoresWinnipeg":"128"
         "WinnipegPopulation":"749,534"   
         "TimeZoneBrandon":"GMT-6",
