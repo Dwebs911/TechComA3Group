@@ -17,7 +17,7 @@ To call using a parameter:
 To call using multiple parameters:
 >  **https://api.manitoba.ca/Ginfo/param1/param2/param3**
 
-GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is found it will return generic information about all cities in Manitoba. Some information can be more detailed such as nearby stores and other will be more vague and reference the city that the location is in. When using multiple parameters the information for the most specific one will be used.
+GenericInfo can take any parameter and will return various generic facts about the location if found. If no location is specified it will return generic information about all cities in Manitoba. When using multiple parameters the information for the most specific one will be used.
 
 #### Parameters
 - City (String) The City parameter is used to specify the location of a city that you want to obtain the information of. **Optional**
@@ -45,6 +45,8 @@ Resources will be formatted in JSON and will be formatted as follows:
       } 
        "status":"OK"  
     }
+
+If an address, city, or postal code are specified in a call but not found, an error code will be returned.
 
 #### Sample Response
 ##### JSON
@@ -91,4 +93,17 @@ Response
       } 
        "status":"OK"  
     }
+
+Call
+
+> https://api.manitoba.ca/Ginfo/sgdjshdfs
+
+Response
+
+> { 
+	"results:
+	{
+	}
+	"status":"400 Bad Request"
+}
 
